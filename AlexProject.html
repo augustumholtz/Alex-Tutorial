@@ -1,0 +1,52 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<title>Heading Example</title>
+</head>
+<body>
+    <script>
+        alert( 'Hello, world!' );
+    </script>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+</body>
+</html>-->
+
+	<form action= "/submit-troop-number"> 
+        <input type = "text" placeholder = "Enter number of attacking troops"> 
+		<input type ="text" placeholder = "Enter number of defending troops">  
+    </form>
+int input1 = number_of_troops_attacking; 
+int input2 = number_of_troops_attacking;  
+int num_atroops = input1; 
+int num_dtroops = input2;
+int di = number_of_dice_being_rolled;
+if(input1>=3){
+	di1=3; 
+}else if(input1==2){ 
+	di1=2; 
+}else if(input1<=1){ 
+	printf("No attack can be performed") 
+}
+if(input2>=2){
+	di2=2; 
+}else if(input2<2){
+	di2=1; 
+}
+	
+if(di1==3 && di2==2){ 
+	while(input1>1){
+		rand1 = rand(1,6); 
+		rand2 = rand(1,6); 
+		rand3 = rand(1,6); 
+		
+		rand4 = rand(1,6);
+		rand5 = rand(1,6); 
+		
+		if((rand1>(rand4 || rand5)) && (rand2>(rand4 || rand5))){
+			num_dtroops = num_dtroops-2; 
+			
